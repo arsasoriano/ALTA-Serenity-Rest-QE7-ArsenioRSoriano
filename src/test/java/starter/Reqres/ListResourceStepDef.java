@@ -41,9 +41,4 @@ public class ListResourceStepDef {
         File json = new File(ReqresAPI.JSON_SCHEMA+"/GetListResourceJsonSchema.json");
         SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
-
-//    @Then("Response status code should be {int} Not Found")
-//    public void responseStatusCodeShouldBeNotFound(int notFound) {
-//        SerenityRest.then().statusCode(notFound);
-//    }
 }
